@@ -16,7 +16,7 @@ run:
       - -ce
       - |
         echo "cleaning untracked files from workdir"
-        git clean -ffXd -e !.idea/
+        git clean -ffXd
     dirs:
       /src: srcDir
     image: { ref: 'node:7.7' }
