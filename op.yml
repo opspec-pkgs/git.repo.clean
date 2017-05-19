@@ -1,4 +1,4 @@
-name: clean
+name: github.com/opspec-pkgs/git.clean
 description: removes files & dirs ignored by git
 inputs:
   srcDir:
