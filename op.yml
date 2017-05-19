@@ -15,9 +15,12 @@ run:
       - sh
       - -ce
       - |
+        echo "installing git"
+        apk -U add git
+        
         echo "cleaning untracked files from workdir"
         git clean -ffXd
     dirs:
       /src: srcDir
-    image: { ref: 'node:7.7' }
+    image: { ref: 'alpine:3.4' }
     workDir: /src
