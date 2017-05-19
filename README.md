@@ -19,7 +19,7 @@ opctl run github.com/opspec-pkgs/git.clean#VERSION
 
 ## compose
 
-```
+```yaml
 name: dummy
 inputs:
   srcDir:
