@@ -1,5 +1,5 @@
 # problem statement
-removes files & dirs ignored by git
+removes ignored files & dirs from a git repo
 
 # example usage
 
