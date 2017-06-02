@@ -14,16 +14,8 @@ outputs:
       description: directory containing the projects source code
 run:
   container:
-    cmd:
-      - sh
-      - -ce
-      - |
-        echo "installing git"
-        apk -U add git
-        
-        echo "cleaning untracked files from workdir"
-        git clean $(opts) 
+    cmd: [ git, clean, $(opts) ]
     dirs:
       /src: srcDir
-    image: { ref: 'alpine:3.4' }
+    image: { ref: 'alpine/git:1.0.3' }
     workDir: /src
