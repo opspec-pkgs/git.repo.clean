@@ -14,7 +14,11 @@ outputs:
       description: directory containing the projects source code
 run:
   container:
-    cmd: [ git, clean, $(opts) ]
+    cmd:
+      - sh
+      - -ce
+      - |
+        git clean $(opts)
     dirs:
       /src: srcDir
     image: { ref: 'opspecpkgs/git.clean:0.0.3' }
