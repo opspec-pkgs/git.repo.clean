@@ -1,4 +1,4 @@
-name: build-n-pub-docker-image
+name: release
 description: releases the package
 inputs:
   version:
@@ -8,11 +8,17 @@ inputs:
     string: {}
   dockerPassword:
     string: {}
+  pkg:
+    dir:
+      default: .
   dockerfile:
     file:
-      default: .opspec/build-n-pub-docker-image/Dockerfile
+      default: .opspec/release/Dockerfile
 run:
   serial:
+    - op:
+        pkg: { ref: github.com/opspec-pkgs/opspec.pkg.validate#1.0.0 }
+        inputs: { pkg }
     - op:
         pkg: { ref: github.com/opspec-pkgs/docker.image.build#1.0.0 }
         inputs: { dockerfile, imageName: 'opspecpkgs/git.clean:$(version)' }

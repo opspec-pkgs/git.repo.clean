@@ -17,5 +17,5 @@ run:
     cmd: [ git, clean, $(opts) ]
     dirs:
       /src: srcDir
-    image: { ref: 'opspecpkgs/git.clean:0.0.1' }
+    image: { ref: 'opspecpkgs/git.clean:0.0.2' }
     workDir: /src
