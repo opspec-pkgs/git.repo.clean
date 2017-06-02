@@ -1,4 +1,4 @@
-name: github.com/opspec-pkgs/git.repo.clean
+name: github.com/opspec-pkgs/git.clean
 description: removes ignored files & dirs from a git repo
 inputs:
   srcDir:
@@ -21,5 +21,5 @@ run:
         git clean $(opts)
     dirs:
       /src: srcDir
-    image: { ref: 'opspecpkgs/git.repo.clean:0.0.3' }
+    image: { ref: 'opspecpkgs/git.clean:0.0.3' }
     workDir: /src
