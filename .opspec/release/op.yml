@@ -17,7 +17,7 @@ inputs:
 run:
   serial:
     - op:
-        pkg: { ref: github.com/opspec-pkgs/opspec0.1.3.pkg.validate#1.0.0 }
+        pkg: { ref: github.com/opspec-pkgs/opspec.pkg.validate#1.0.0 }
         inputs: { pkg }
     - op:
         pkg: { ref: github.com/opspec-pkgs/docker.image.build#1.0.0 }
