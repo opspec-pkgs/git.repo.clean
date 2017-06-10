@@ -12,6 +12,7 @@ outputs:
   srcDir:
     dir:
       description: directory containing the projects source code
+version: 0.0.5
 run:
   container:
     cmd:
