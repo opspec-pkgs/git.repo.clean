@@ -12,7 +12,7 @@ outputs:
   srcDir:
     dir:
       description: directory containing the projects source code
-version: 0.0.5
+version: 0.0.3
 run:
   container:
     cmd:
@@ -31,5 +31,5 @@ run:
         echo $filesToClean | xargs rm -Rf
     dirs:
       /src: srcDir
-    image: { ref: 'opspecpkgs/git.clean:0.0.5' }
+    image: { ref: 'opspecpkgs/git.clean:0.0.3' }
     workDir: /src
