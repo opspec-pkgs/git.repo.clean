@@ -29,5 +29,5 @@ run:
         echo $filesToClean | xargs rm -Rf
     dirs:
       /src: srcDir
-    image: { ref: 'opspecpkgs/git.clean:0.0.3' }
+    image: { ref: 'opspecpkgs/git.clean:0.0.5' }
     workDir: /src
