@@ -18,7 +18,14 @@ run:
       - sh
       - -ce
       - |
-        git clean $(opts)
+        echo 'determining files to clean'
+        filesToClean=$(git clean -n $(opts)| sed 's/Would remove *//')
+        
+        echo "taking ownership of files"
+        echo $filesToClean | xargs chown -R root:root
+        
+        echo 'removing files'
+        echo $filesToClean | xargs rm -rf
     dirs:
       /src: srcDir
     image: { ref: 'opspecpkgs/git.clean:0.0.3' }
