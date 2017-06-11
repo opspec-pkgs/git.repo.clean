@@ -17,7 +17,7 @@ run:
   container:
     cmd:
       - sh
-      - -ce
+      - -c
       - |
         echo 'determining files to clean'
         filesToClean=$(git clean -n $(opts)| sed 's/Would remove *//')
