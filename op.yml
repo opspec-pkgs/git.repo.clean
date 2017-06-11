@@ -18,7 +18,18 @@ run:
     cmd:
       - sh
       - -ce
-      - git clean $(opts)
+      - |
+        echo 'determining files to clean'
+        filesToClean=$(git clean -n $(opts)| sed 's/Would remove *//')
+        
+        echo 'removing files; two attempts will be made'
+        # 2 attempts because for unknown reasons the first regularly fails on osx w/ nfs enabled
+        i=2
+        while [ $i -gt 0 ]
+        do
+          i=$((i-1))
+          echo $filesToClean | xargs rm -rf
+        done
     dirs:
       /src: srcDir
     image: { ref: 'opspecpkgs/git.clean:0.0.3' }
