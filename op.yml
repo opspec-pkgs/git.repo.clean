@@ -15,7 +15,10 @@ outputs:
 version: 1.0.0
 run:
   container:
-    cmd: [ /cmd.sh ]
+    cmd:
+      - sh
+      - -ce
+      - git clean $(opts)
     dirs:
       /src: srcDir
     envVars:
