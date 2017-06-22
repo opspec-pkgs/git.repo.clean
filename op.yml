@@ -21,9 +21,5 @@ run:
       - git clean $(opts)
     dirs:
       /src: srcDir
-    envVars:
-      opts:
-    files:
-      /cmd.sh:
     image: { ref: 'opspecpkgs/git.clean:1.0.0' }
     workDir: /src
