@@ -20,6 +20,6 @@ run:
       - -ce
       - git clean $(opts)
     dirs:
-      /src: srcDir
+      /src: $(srcDir)
     image: { ref: 'opspecpkgs/git.clean:1.0.0' }
     workDir: /src
