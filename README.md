@@ -30,6 +30,9 @@ opctl run github.com/opspec-pkgs/git.clean#1.0.0
 op:
   pkg: { ref: github.com/opspec-pkgs/git.clean#1.0.0 }
   inputs:
+    # params w/ default
+    srcDir:
+    opts:
   outputs:
     srcDir:
 ```
