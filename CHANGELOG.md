@@ -7,3 +7,9 @@ All notable changes will be documented in this file in accordance with
 
 ## \[1.0.0] - 2017-06-22
 
+### Changed
+
+- remove deprecated reference syntax
+
+## \[1.0.0] - 2017-06-22
+

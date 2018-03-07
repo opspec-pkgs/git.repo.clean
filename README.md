@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/opspec-pkgs/git.clean.svg?branch=master)](https://travis-ci.org/opspec-pkgs/git.clean)
+[![Build Status](https://travis-ci.org/opspec-pkgs/git.repo.clean.svg?branch=master)](https://travis-ci.org/opspec-pkgs/git.repo.clean)
 
 <img src="icon.svg" alt="icon" height="100px">
 
@@ -15,20 +15,20 @@ this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opsp
 ## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/git.clean#1.0.0
+opctl pkg install github.com/opspec-pkgs/git.repo.clean#1.0.1
 ```
 
 ## Run
 
 ```
-opctl run github.com/opspec-pkgs/git.clean#1.0.0
+opctl run github.com/opspec-pkgs/git.repo.clean#1.0.1
 ```
 
 ## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/git.clean#1.0.0 }
+  pkg: { ref: github.com/opspec-pkgs/git.repo.clean#1.0.1 }
   inputs:
     # params w/ default
     srcDir:
@@ -42,7 +42,7 @@ op:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://github.com/opspec-pkgs/git.clean/issues)
+[open an issue](https://github.com/opspec-pkgs/git.repo.clean/issues)
 
 # Releases
 
