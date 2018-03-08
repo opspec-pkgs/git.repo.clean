@@ -12,7 +12,7 @@ outputs:
   srcDir:
     dir:
       description: directory containing the projects source code
-version: 1.0.1
+version: 1.1.0
 run:
   container:
     cmd:
@@ -21,5 +21,5 @@ run:
       - git clean $(opts)
     dirs:
       /src: $(srcDir)
-    image: { ref: 'opspecpkgs/git.repo.clean:1.0.1' }
+    image: { ref: 'opspecpkgs/git.repo.clean:1.1.0' }
     workDir: /src

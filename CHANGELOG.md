@@ -5,6 +5,16 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[1.1.0] - 2018-03-07
+
+### Added
+
+- opspec 0.1.6 compatibility
+
+### Changed
+
+- renamed from `git.clean` to `git.repo.clean`
+
 ## \[1.0.0] - 2017-06-22
 
 ### Changed
