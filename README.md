@@ -1,4 +1,4 @@
-[![build](https://github.com/opspec-pkgs/github.com/opspec-pkgs/git.repo.clean/actions/workflows/build.yml/badge.svg)](https://github.com/opspec-pkgs/github.com/opspec-pkgs/git.repo.clean/actions/workflows/build.yml)
+[![build](https://github.com/opspec-pkgs/git.repo.clean/actions/workflows/build.yml/badge.svg)](https://github.com/opspec-pkgs/git.repo.clean/actions/workflows/build.yml)
 
 
 <img src="icon.svg" alt="icon" height="100px">
